@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head prefix="og: http://ogp.me/ns#">
+        <meta charset="UTF-8">
+        <title>ググレカス</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="自分で調べることはとても大切です。人に聞く前に自分で調べましょう。">
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="自分で調べることはとても大切です。人に聞く前に自分で調べましょう。">
+    </head>
+    <body>
+        <script type="text/javascript">
+            const currentUrl = window.location.href;
+
+            if (currentUrl.lastIndexOf('/') === currentUrl.length - 1) {
+                window.location.replace("https://google.com");
+            } else {
+                const subdirectoryText = currentUrl.substring(currentUrl.lastIndexOf('/') + 1);
+                window.location.replace("https://www.google.com/search?q=" + subdirectoryText);
+            }
+        </script>
+    </body>
+</html>
